@@ -10,3 +10,8 @@ I will be listing the step by step instructions I used in the project
 6. `docker compose build`
 7. `docker compose run --rm web django-admin startproject config .`
 
+
+we are using postgres as it is a ecommerce based cart system as it guranteees
+ALL succeed → order created
+OR none succeed → nothing saved 
+
