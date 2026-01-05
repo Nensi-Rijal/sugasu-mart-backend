@@ -15,3 +15,25 @@ we are using postgres as it is a ecommerce based cart system as it guranteees
 ALL succeed → order created
 OR none succeed → nothing saved 
 
+docker compose down
+docker compose build --no-cache
+docker compose up
+
+we modified and made changes in settings.py as required, made changes in the installed apps, databases, middlewar
+we updates the urls.py file 
+
+ran the migrations
+`docker compose exec web python manage.py migrate`
+
+swagger url `http://localhost:8000/api/docs/`
+
+
+A serializer is the layer that:
+
+validates incoming request data (JSON → Python)
+
+creates/updates database objects
+
+controls what data is sent back (Python → JSON)
+
+docker compose up -d command to run migrations
